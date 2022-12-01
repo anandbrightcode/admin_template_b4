@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Ionicons -->
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <!-- FontAwsome -->
+        <link rel="stylesheet" href="<?php echo file_url("includes/plugins/fontawesome/css/all.css"); ?>">
         <!-- iCheck -->
         <link rel="stylesheet" href="<?php echo file_url("includes/plugins/icheck-bootstrap/icheck-bootstrap.min.css"); ?>">
         <!-- Theme style -->
@@ -44,8 +46,9 @@
         <link rel="stylesheet" href="<?php echo file_url('includes/custom/custom.css'); ?>">     
         <!-- Google Font: Source Sans Pro -->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/512e5abe13.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="<?php echo file_url("includes/plugins/fontawesome/js/all.js"); ?>"></script>
+        
 		<?php
             if(!empty($top_script)){
                 foreach($top_script as $key=>$script){

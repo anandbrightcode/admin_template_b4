@@ -97,8 +97,8 @@
 	}
 	
 	function loaddatatable(){
-		$this->styles['link'][]="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.css";
-		$this->top_script['link'][]="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js";
+		$this->styles['file'][]="includes/plugins/DataTables/datatables.min.css";
+		$this->bottom_script['file'][]="includes/plugins/DataTables/datatables.min.js";
 	}
 	
 	function loadselect2(){
@@ -106,7 +106,7 @@
 		$this->bottom_script['file'][]="includes/plugins/select2/select2.full.min.js";
 	}
 	
-	function rangepicker(){
+	function loadrangepicker(){
 		$this->styles['file'][]="plugins/daterangepicker/daterangepicker.css";
 		$this->bottom_script['link'][]="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js";
 		$this->bottom_script['file'][]="plugins/daterangepicker/daterangepicker.js";

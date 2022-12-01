@@ -56,9 +56,9 @@
 		  }
 		}
 		?>
+        
         <!-- AdminLTE for demo purposes -->
         <script src="<?php echo file_url("includes/dist/js/demo.js"); ?>"></script>
-        <script src="<?php echo file_url("includes/plugins/chart.js/Chart.min.js"); ?>"></script>
         <script src="<?php echo file_url("includes/custom/custom.js"); ?>"></script>
     </body>
 </html>
