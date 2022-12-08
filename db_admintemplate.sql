@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 09, 2020 at 07:10 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.2
+-- Generation Time: Dec 02, 2022 at 12:05 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.0.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -38,9 +37,8 @@ CREATE TABLE `tmp_sidebar` (
   `parent` int(11) NOT NULL,
   `position` int(11) NOT NULL,
   `role_id` varchar(255) NOT NULL,
-  `status` int(11) NOT NULL DEFAULT '1'
+  `status` int(11) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
 
 -- --------------------------------------------------------
 
@@ -60,9 +58,9 @@ CREATE TABLE `tmp_users` (
   `salt` varchar(20) NOT NULL,
   `otp` varchar(50) NOT NULL,
   `token` varchar(50) NOT NULL,
-  `status` tinyint(1) NOT NULL DEFAULT '0',
-  `created_on` datetime NOT NULL,
-  `updated_on` datetime NOT NULL
+  `status` tinyint(1) NOT NULL DEFAULT 1,
+  `created_on` datetime NOT NULL DEFAULT current_timestamp(),
+  `updated_on` datetime DEFAULT NULL ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -70,7 +68,7 @@ CREATE TABLE `tmp_users` (
 --
 
 INSERT INTO `tmp_users` (`id`, `username`, `mobile`, `name`, `email`, `password`, `vp`, `role`, `salt`, `otp`, `token`, `status`, `created_on`, `updated_on`) VALUES
-(1, 'admin', '7894561230', 'Admin', 'admin@gmail.com', '2021ac8d19debae18e7a13679f8091fa', '12345', 'admin', 'MOPWgKdeZyU2kAL9', '5e74a5b009e1b7c3f7c49c40bbba95fc', '', 1, '2020-01-07 17:05:51', '2020-01-07 17:36:42');
+(1, 'admin', '7906677234', 'Admin', 'admin@gmail.com', '2021ac8d19debae18e7a13679f8091fa', '12345', '1', 'MOPWgKdeZyU2kAL9', '5e74a5b009e1b7c3f7c49c40bbba95fc', '', 1, '2020-01-07 17:05:51', '2020-01-07 17:36:42');
 
 --
 -- Indexes for dumped tables
