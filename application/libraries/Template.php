@@ -95,15 +95,14 @@
 		$this->ci->load->view($location.$view);
 		$this->ci->load->view('includes/bottom-section');
 	}
-	
 	function loaddatatable(){
 		$this->styles['file'][]="includes/plugins/DataTables/datatables.min.css";
 		$this->bottom_script['file'][]="includes/plugins/DataTables/datatables.min.js";
 	}
 	
 	function loadselect2(){
-		$this->styles['file'][]="includes/plugins/select2/select2.min.css";
-		$this->bottom_script['file'][]="includes/plugins/select2/select2.full.min.js";
+		$this->styles['file'][]="includes/plugins/select2/css/select2.min.css";
+		$this->bottom_script['file'][]="includes/plugins/select2/js/select2.full.min.js";
 	}
 	
 	function loadrangepicker(){
