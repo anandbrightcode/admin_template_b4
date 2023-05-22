@@ -24,7 +24,7 @@
     		$CI = get_instance();
 			if($CI->session->user===NULL || $CI->session->project!=PROJECT_NAME ){
 				setredirecturl();
-				redirect('login/');
+				redirect('/login');
 			}
 			else{
 				//getsubmission();
