@@ -121,7 +121,7 @@
 	}
 	
 	function loadckeditor(){
-		$this->top_script['link'][]="//cdn.ckeditor.com/4.13.0/standard/ckeditor.js";
+		$this->top_script['link'][]="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js";
 	}
 	
 	function loadswitchery(){
